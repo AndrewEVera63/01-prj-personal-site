@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body id="top">
 
 <header>
   <div class="header-content">
@@ -27,7 +27,7 @@
 
 <section id="about">
   <h2>About Me</h2>
-  <p>Hello! My name is Andrew Vera. I am currently a graduate student pursuing a Master’s degree in Digital Media Communications at Texas State University. I earned my bachelor’s degree in Advertising and Communications from The University of Texas at El Paso in May 2024.</p>
+  <p>Hello! My name is Andrew Vera. I am currently a graduate student pursuing a Master’s degree in Digital Media Communications at Texas State University. I earned my bachelor’s degree in Advertising and Communications from The University of Texas at El Paso in May 2024. I am chronically online and I love to create for absouletly no reason. I love everything photography, graphic design, and animation. </p>
 </section>
 
 <section id="projects">
@@ -111,18 +111,18 @@
     <div class="interest-images">
 
       <div class="interest-item">
-        <img src="img/music1.jpg">
-        <p>Song 1</p>
+        <img src="img/music1.png">
+        <p>Uncertain, TX</p>
       </div>
 
       <div class="interest-item">
         <img src="img/music2.jpg">
-        <p>Song 2</p>
+        <p>Pinky Up</p>
       </div>
 
       <div class="interest-item">
-        <img src="img/music3.jpg">
-        <p>Song 3</p>
+        <img src="img/music3.png">
+        <p>KGB</p>
       </div>
 
     </div>
@@ -132,12 +132,42 @@
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>Email: Aev63@txstate.edu</p>
+  <p><i class="fa-solid fa-at"></i> Email: Aev63@txstate.edu</p>
+  <p><i class="fa-brands fa-github"></i> GitHub: AndrewEVera63</p>
 </section>
-
+<a href="#top" class="back-to-top">↑ Back to Top</a>
 <footer>
   <p>© 2026 Andrew Vera</p>
 </footer>
+
+
+<script>
+  const btn = document.getElementById("backToTop");
+
+  window.onscroll = function () {
+    let scrollPosition = window.innerHeight + window.scrollY;
+    let pageHeight = document.body.offsetHeight;
+
+    // ✅ Show button ONLY when near bottom
+    if (scrollPosition >= pageHeight - 100) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // ✅ Scroll back to top when clicked
+  btn.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+</script>
+
+
+
+
 
 </body>
 </html>

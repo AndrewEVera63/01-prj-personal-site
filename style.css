@@ -144,3 +144,20 @@ footer {
   background: black;
   color: white;
 }
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.back-to-top:hover {
+  background: maroon;
+}
